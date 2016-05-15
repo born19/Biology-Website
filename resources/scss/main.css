@@ -215,25 +215,51 @@ body {
 
 #main_title {
   float: left;
-  padding-right: 1%;
-  padding-bottom: 1%;
-  font-size: 30px; }
+  font-size: 30px;
+  color: white; }
 
 header {
-  background: -webkit-linear-gradient(#CAE0FF, #8FAEFF) left;
-  background: linear-gradient(#CAE0FF, #8FAEFF) left;
-  height: 10%;
+  background: -webkit-linear-gradient(#595959, #292929) left;
+  background: linear-gradient(#595959, #292929) left;
+  height: 15%;
   width: 100%;
-  padding-top: 1.5%;
-  padding-left: 1.5%;
-  margin-bottom: 3%;
+  padding: 2.5%;
   border-bottom-style: solid;
-  border-bottom-width: 1%; }
+  border-bottom-width: 1%;
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  bottom: 0px; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .button-group {
   float: right;
-  padding-right: 20%;
-  padding-bottom: 1%; }
+  overflow: auto; }
+
+#content {
+  margin-top: 12%; }
+
+footer {
+  background: -webkit-linear-gradient(#595959, #292929) left;
+  background: linear-gradient(#595959, #292929) left;
+  height: 10%;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  top: 90%;
+  bottom: 90%; }
+  footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#att {
+  text-align: center;
+  padding-top: 2%;
+  color: white; }
 
 .button-group input {
   display: none; }

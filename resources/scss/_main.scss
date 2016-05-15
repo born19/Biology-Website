@@ -9,6 +9,8 @@ Created On: 5/14/2016
 $lBlue: #CAE0FF;
 $dBlue: #8FAEFF; 
 
+$black: #292929;
+$lwhite: #595959;
 * {
     margin: 0px;
     padding: 0px;
@@ -24,24 +26,41 @@ body {
 
 #main_title {
 	float: left;
-	@include padding(null 1% 1% null);
+	@include padding(null null null  null);
 	font-size: 30px;
+	color: white;
 }
 
 header {
-	@include background(linear-gradient($lBlue, $dBlue) left);
-	@include size(100% 10%);
-	@include padding(1.5% null null 1.5%);
-	@include margin(null null 3% null);
+	@include background(linear-gradient($lwhite, $black) left);
+	@include size(100% 15%);
+	@include padding(2.5%);
 	border-bottom-style: solid;
 	@include border-width(null null 1% null);
+	display: inline-block;
+	@include position(fixed, 0px null 0px null);
+	@include clearfix;
 }
 
 .button-group {
 	float: right;
-	@include padding(null 20% 1% null);
+	overflow: auto
+}
+
+#content{
+	@include margin(12% null null null);
 }
 
 footer {
-		
+	@include background(linear-gradient($lwhite, $black) left);
+	@include size(100% 10%);
+	display: inline-block;
+	@include position(fixed, 90% null 90% null);
+	@include clearfix;
+}
+
+#att {
+text-align: center;
+@include padding(2% null null null);
+color: white;
 }
