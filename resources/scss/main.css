@@ -215,7 +215,7 @@ body {
 
 #main_title {
   float: left;
-  font-size: 30px;
+  font-size: 28px;
   color: white; }
 
 header {
@@ -229,7 +229,8 @@ header {
   display: inline-block;
   position: fixed;
   top: 0px;
-  bottom: 0px; }
+  bottom: 0px;
+  z-index: 2; }
   header::after {
     clear: both;
     content: "";
@@ -237,10 +238,19 @@ header {
 
 .button-group {
   float: right;
-  overflow: auto; }
+  height: 15%; }
+
+.side-image {
+  position: absolute;
+  top: 15%;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 0; }
 
 #content {
-  margin-top: 8%; }
+  margin-top: 12%;
+  border-bottom-style: solid; }
 
 footer {
   background: -webkit-linear-gradient(#595959, #292929) left;
@@ -260,6 +270,10 @@ footer {
   text-align: center;
   padding-top: 2%;
   color: white; }
+
+#pdf {
+  margin: 13.5% 10% 3.1%;
+  z-index: -2; }
 
 .button-group input {
   display: none; }

@@ -27,7 +27,7 @@ body {
 #main_title {
 	float: left;
 	@include padding(null null null  null);
-	font-size: 30px;
+	font-size: 28px;
 	color: white;
 }
 
@@ -40,15 +40,21 @@ header {
 	display: inline-block;
 	@include position(fixed, 0px null 0px null);
 	@include clearfix;
+	z-index: 2;
 }
 
 .button-group {
 	float: right;
-	overflow: auto
+	height: 15%;
 }
 
+.side-image {
+	@include position(absolute, 15% 0px 0px 0px);
+	z-index: 0;
+}
 #content{
-	@include margin(8% null null null);
+	@include margin(12% null null null);
+	border-bottom-style: solid;
 }
 
 footer {
@@ -60,7 +66,12 @@ footer {
 }
 
 #att {
-text-align: center;
-@include padding(2% null null null);
-color: white;
+	text-align: center;
+	@include padding(2% null null null);
+	color: white;
+}
+
+#pdf {
+	@include margin(13.5% 10% 3.1% 10%);
+	z-index: -2;
 }
